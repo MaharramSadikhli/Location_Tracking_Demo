@@ -5,7 +5,7 @@ var client = mqtt.connect("mqtt://127.0.0.1:1883")
 
 let lat = Math.random()*100; // enlem
 let lng = Math.random()*100; // boylam 
-let speed = Math.ceil(Math.random())*300; // hiz
+let speed = Math.ceil(Math.random()*300); // hiz
 let altitude = Math.ceil(Math.random()*1000); // irtifa
 let course = Math.ceil(Math.random()*360); // rota
 client.on('connect', ()=>{
